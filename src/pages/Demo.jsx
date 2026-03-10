@@ -8,20 +8,24 @@ export const Demo = () => {
 
   return (
     <div className="container">
-      <div className="hoja">
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" name="nombre"></input>
+      <h1>Add a new contact</h1>
+        <div className="hoja">
+          <label for="nombre">Full Name</label>
+          <input type="text" id="nombre" name="nombre"></input>
 
-         <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" name="nombre"></input>
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email"></input>
 
-         <label for="nombre">Nombre</label>
-        <input  id="nombre" name="nombre"></input>
-      </div>
+          <label for="phone">Phone</label>
+          <input  id="Phone" name="Phone"></input>
+
+          <label for="Adress">Adress</label>
+          <input type="text" id="Adress" name="Adress"></input>
+        </div>
       <br />
-
+        <button className="btn btn-primary">Save</button>
       <Link to="/">
-        <button className="btn btn-primary">Back home</button>
+        <button className="btn">Get back to contacts</button>
       </Link>
     </div>
   );
